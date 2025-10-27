@@ -8,10 +8,21 @@
       rel="icon"
       href="https://cdn-icons-png.flaticon.com/128/19025/19025267.png"
     />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      button {
+        margin: 10px auto;
+        border-radius: 5px;
+        background-color: rgb(7, 154, 228);
+        color: white;
+      }
+    </style>
   </head>
   <body>
-    <h1>Course Registration Form</h1>
-    <form style="width: 420px" action="response.html">
+    <h1 style="text-align: center">Course Registration Form</h1>
+    <form action="response.html">
       <fieldset>
         <legend>Personal Details</legend>
         <table>
@@ -34,7 +45,7 @@
             <td>
               <input
                 maxlength="30"
-                minlength="3"
+                minlength="1"
                 type="text"
                 name="lname"
                 placeholder="Ex: D"
@@ -49,6 +60,7 @@
                 type="tel"
                 name="mobile"
                 placeholder="+91 9876543210"
+                maxlength="10"
                 required
               /><br />
             </td>
@@ -71,6 +83,7 @@
                 name="passwoord"
                 type="password"
                 placeholder="min 6 characters"
+                maxlength="6"
                 required
               /><br />
             </td>
@@ -82,6 +95,7 @@
                 type="password"
                 name="password"
                 placeholder="min 6 characters"
+                maxlength="6"
                 required
               />
               <br />
@@ -119,17 +133,19 @@
             <td><input type="file" /><br /></td>
           </tr>
         </table>
-        <input type="reset" />
+        <button type="reset">Reset</button>
       </fieldset>
-
+      &nbsp;
       <fieldset>
         <legend>Course Details</legend>
         <label for="selectcourse">Select Course</label>
         <select name="" id="">
           <option value="Phython Full Stack">Phython Full Stack</option>
-          <option value="Phython Full Stack">Java Full Stack</option>
-          <option value="Phython Full Stack">Data Science</option>
-          <option value="Phython Full Stack">Artificial Intelligence</option>
+          <option value="Java Full Stack">Java Full Stack</option>
+          <option value="Data Science">Data Science</option>
+          <option value="Artificial Intelligence">
+            Artificial Intelligence
+          </option>
         </select>
         <br />
         <label for="deliverymode">Delivery Mode</label>
@@ -138,9 +154,9 @@
         <input type="radio" value="Offline" name="deliverymode" />
         <label for="">Offline</label><br />
         <label for="">Comments</label> <br />
-        <textarea name="" id=""></textarea>
+        <textarea placeholder="Give your feedback" name="" id=""></textarea>
         <br />
-        <input type="submit" />
+        <button type="button">Submit</button>
       </fieldset>
     </form>
   </body>
