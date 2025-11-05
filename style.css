@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  background-color: rgb(30, 29, 29);
+  border: 3px solid aqua;
+  padding: 25px;
+  width: 550px;
+  margin-top: ;
+  margin: 25px auto;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  font-size: 32px;
+  box-shadow: 1px 2px 18px aqua;
+}
+legend {
+  background-color: blue;
+  border: 1px solid white;
+  padding: 8px;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+fieldset {
+  width: 550px;
+  height: 100vh;
+  margin: 0px auto;
+  padding: 20px;
+  border: 3px solid aqua;
+  border-radius: 15px;
+  background-color: rgb(30, 29, 29);
+  box-shadow: 1px 2px 18px aqua;
+}
+
+td {
+  padding: 12px;
+}
+
+label:hover {
+  color: green;
+}
+
+input {
+  border-radius: 12px;
+  padding: 10px;
+  border: 10px red;
+}
+
+legend {
+  color: white;
+}
+
+form {
+  color: yellow;
+}
+
+textarea {
+  margin: 4px auto;
+}
